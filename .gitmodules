@@ -1,0 +1,6 @@
+[submodule "submodules/glfw"]
+	path = submodules/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "submodules/libressl"]
+	path = submodules/libressl
+	url = https://github.com/libressl-portable/portable.git
