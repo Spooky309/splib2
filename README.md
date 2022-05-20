@@ -2,7 +2,7 @@
 
 This is my library, it has anything I decided to throw in it.
 
-This is NOT a replacement for STL, nor is it trying to be. That said, it does not use STL, though we do use stdlib functions for printf (and its cousins) as well as malloc/free/realloc, unless specific overloads for those are provided (see `SPLib.hpp`).
+This is NOT a replacement for STL, nor is it trying to be. That said, it does not use STL, though we do use stdlib functions for printf (and its cousins), `string.h` as well as malloc/free/realloc, unless specific overloads for those are provided (see `SPLib.hpp`).
 
 To build, on Linux at least, you just need to clone the repository recursively, go into the libressl submodule and run autogen.sh, then you can use cmake to build as usual. You can turn the tests off by disabling `SPLIB_BUILD_TESTS`
 

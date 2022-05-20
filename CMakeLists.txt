@@ -25,5 +25,6 @@ add_subdirectory(submodules)
 add_subdirectory(splib2)
 
 if(SPLIB_BUILD_TESTS)
+    include(CTest)
     add_subdirectory(splib2_tests)
 endif()
