@@ -1,6 +1,6 @@
 create_test_sourcelist (string_tests_src
     "StringTests.cpp"
-    "FromCStr.cpp"
+    "Constructors.cpp"
 )
 
 add_executable(string_tests ${string_tests_src})

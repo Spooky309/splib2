@@ -58,6 +58,9 @@ enum
     SPLIB_EXIT_CODE_PANIC_ALLOC_FAIL = -1024
 };
 
+#ifndef INCLUDE_UTIL_HPP
+#include "Util.hpp"
+#endif
 #ifndef INCLUDE_STRING_HPP
 #include "String.hpp"
 #endif
