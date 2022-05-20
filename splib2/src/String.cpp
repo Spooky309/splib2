@@ -99,8 +99,15 @@ namespace SPLib
         if (ret.m_Capacity != 0)
         {
             ret.m_Memory = (char*)SPLIB_MALLOC(ret.m_Capacity);
-            if (m_Memory != nullptr) strcpy(ret.m_Memory, m_Memory);
-            if (Other.m_Memory != nullptr) strcat(ret.m_Memory, Other.m_Memory);
+            if (m_Memory != nullptr) 
+            {
+                strcpy(ret.m_Memory, m_Memory);
+                if (Other.m_Memory != nullptr) strcat(ret.m_Memory, Other.m_Memory);
+            }
+            else
+            {
+                if (Other.m_Memory != nullptr) strcpy(ret.m_Memory, Other.m_Memory);
+            }
         }
         return ret;
     }
