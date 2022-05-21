@@ -45,6 +45,10 @@ typedef decltype(sizeof(char)) size_t;
 #define SPLIB_REALLOC(Pointer, NewSize) realloc(Pointer, NewSize)
 #endif
 
+#ifndef SPLIB_CALLOC
+#define SPLIB_CALLOC(Size, Blocks) calloc(Size, Blocks)
+#endif
+
 #ifndef SPLIB_PANIC
 #define SPLIB_PANIC(ExitCode) exit(ExitCode)
 #endif
@@ -63,6 +67,9 @@ enum
 #endif
 #ifndef INCLUDE_STRING_HPP
 #include "String.hpp"
+#endif
+#ifndef INCLUDE_LIST_HPP
+#include "List.hpp"
 #endif
 
 #endif //SPLIB_H

@@ -57,6 +57,8 @@ namespace SPLib
         */
         String(String&& Other);
 
+        // Destructors
+
         /**
         * Destructor, this deallocates memory used by the string
         */

@@ -73,6 +73,8 @@ namespace SPLib
           m_Capacity(Other.m_Capacity)
     {
         Other.m_Memory = nullptr;
+        Other.m_Length = 0;
+        Other.m_Capacity = 0;
     }
 
     /**
@@ -124,7 +126,7 @@ namespace SPLib
             }
             else
             {
-                m_Memory = (char*)calloc(m_Capacity, 1);
+                m_Memory = (char*)SPLIB_CALLOC(m_Capacity, 1);
             }
         }
         if (Other.m_Memory != nullptr) strcat(m_Memory, Other.m_Memory);
